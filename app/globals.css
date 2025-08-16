@@ -1,26 +1,60 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-alegreya);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000;
+  color: white;
+}
+
+.section {
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+.logo {
+  position: absolute;
+  width: 77px;
+  height: 77px;
+  left: 21px;
+  top: 0px;
+}
+
+.hero {
+  flex-direction: column;
+}
+
+.hero::before {
+  background-image: url("/jurassic-hero.png");
+  opacity: 1;
+}
+
+.alegreya {
+  font-family: "algreya";
+}
+
+.aboreto {
+  font-family: "aboreto";
 }
