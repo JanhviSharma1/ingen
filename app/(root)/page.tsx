@@ -31,7 +31,7 @@ export default function Home() {
       </section>
       <br />
 
-      <section className="text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32">
+      <section className="flex justify-center items-center text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32">
         <About />
       </section>
 

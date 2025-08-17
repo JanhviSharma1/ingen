@@ -7,11 +7,11 @@ type AboutProps = {
 
 const About = ({ title, content }: AboutProps) => {
   return (
-    <div className="p-5 text-center max-w-[700px]">
+    <div className="p-5 text-center max-w-[700px] mx-auto">
       <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl">
         {title}
       </h1>
-      <p className="alegreya text-base sm:text-lg md:text-xl lg:text-1xl">
+      <p className="alegreya text-base sm:text-lg md:text-xl lg:text-xl mt-4">
         {content}
       </p>
     </div>
