@@ -3,13 +3,14 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
-interface ServicesProps {
+interface ServiceCardProps {
   title: string;
   description: string;
   images: string;
 }
 
-const Services = ({ title, description, images }: ServicesProps) => {
+// Single Card Component
+const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
   return (
     <CardContainer className="p-3 sm:p-1 md:p-2 lg:p-3 justify-center">
       <CardBody
@@ -24,11 +25,11 @@ const Services = ({ title, description, images }: ServicesProps) => {
           {title}
         </CardItem>
 
-        {/* Image and Description */}
+        {/* Image + Description */}
         <CardItem translateZ="100" className="w-full mt-4">
           <img
             src={images}
-            alt="thumbnail"
+            alt={title}
             height={205}
             width={411}
             className="
@@ -46,6 +47,39 @@ const Services = ({ title, description, images }: ServicesProps) => {
         </CardItem>
       </CardBody>
     </CardContainer>
+  );
+};
+
+// Section Component
+const Services = () => {
+  return (
+    <div className="py-10 px-6">
+      {/* Heading */}
+      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] mb-10">
+        SERVICES
+      </h1>
+
+      {/* Cards */}
+      <div className="flex flex-wrap justify-center gap-8">
+        <ServiceCard
+          title="DNA RECOVERY UNIT"
+          description="Extracts and preserves genetic material from prehistoric fossils using proprietary Gen-Lock cryogenic systems."
+          images="dna-recovery.jpg"
+        />
+
+        <ServiceCard
+          title="GENETIC ENGINEERING LAB"
+          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
+          images="genetic-engineering.jpg"
+        />
+
+        <ServiceCard
+          title="PALEO-CLONING DIVISION"
+          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
+          images="genetic-engineering.jpg"
+        />
+      </div>
+    </div>
   );
 };
 

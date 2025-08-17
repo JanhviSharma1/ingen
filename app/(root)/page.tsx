@@ -7,7 +7,7 @@ import { CardsCarousel } from "@/components/discover";
 export default function Home() {
   return (
     <div>
-      <section className="section hero">
+      <section id="home" className="section hero">
         <Navbar />
         <h1 className="text-6xl aboreto">
           <span className="alegreya text-[#F4E432]">
@@ -31,31 +31,15 @@ export default function Home() {
       </section>
       <br />
 
-      <section className="flex justify-center items-center text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32">
+      <section
+        id="about"
+        className="flex justify-center items-center text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32"
+      >
         <About />
       </section>
 
-      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]">
-        SERVICES
-      </h1>
-      <section className="flex-wrap flex justify-center">
-        <Services
-          title="DNA RECOVERY UNIT"
-          description="Extracts and preserves genetic material from prehistoric fossils using proprietary Gen-Lock cryogenic systems."
-          images="dna-recovery.jpg"
-        />
-
-        <Services
-          title="GENETIC ENGINEERING LAB"
-          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
-          images="genetic-engineering.jpg"
-        />
-
-        <Services
-          title="PALEO-CLONING DIVISION"
-          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
-          images="genetic-engineering.jpg"
-        />
+      <section id="services" className="flex flex-col items-center py-10">
+        <Services />
       </section>
 
       <section className="relative pl-[30px] py-10 bg-[url('/stats-bg.png')] bg-cover bg-center bg-no-repeat">
@@ -63,7 +47,7 @@ export default function Home() {
       </section>
       <br />
 
-      <section>
+      <section id="discover">
         <CardsCarousel />
       </section>
     </div>
