@@ -11,11 +11,10 @@ interface ServicesProps {
 
 const Services = ({ title, description, images }: ServicesProps) => {
   return (
-    <CardContainer className="flex-wrap">
+    <CardContainer className="p-2">
       <CardBody
         className="
-          relative group/card
-          bg-[#919375]/40 text-white text-center
+          bg-[#919375]/40 text-white
           w-auto sm:w-[30rem] h-auto
           rounded-xl p-6
         "

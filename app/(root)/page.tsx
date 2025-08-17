@@ -2,6 +2,7 @@ import About from "@/components/about";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Stats from "@/components/stats";
+import { CardsCarousel } from "@/components/discover";
 
 export default function Home() {
   return (
@@ -30,14 +31,14 @@ export default function Home() {
       </section>
       <br />
 
-      <section className="section">
+      <section className="text-center py-10 px-100">
         <About />
       </section>
 
-      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center mb-10 text-[#919375]">
+      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]">
         SERVICES
       </h1>
-      <section className="services">
+      <section className="flex-wrap flex">
         <Services
           title="DNA RECOVERY UNIT"
           description="Extracts and preserves genetic material from prehistoric fossils using proprietary Gen-Lock cryogenic systems."
@@ -57,8 +58,13 @@ export default function Home() {
         />
       </section>
 
-      <section className="relative pl-[30px] pt-20 bg-[url('/stats-bg.png')] bg-cover bg-center bg-no-repeat">
+      <section className="relative pl-[30px] py-10 bg-[url('/stats-bg.png')] bg-cover bg-center bg-no-repeat">
         <Stats />
+      </section>
+      <br />
+
+      <section>
+        <CardsCarousel />
       </section>
     </div>
   );
