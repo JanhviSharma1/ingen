@@ -51,6 +51,15 @@ body {
   opacity: 1;
 }
 
+.services {
+  flex-direction: column;
+}
+
+.stats::before {
+  background-image: url("/stats-bg.png");
+  opacity: 1;
+}
+
 .alegreya {
   font-family: "algreya";
 }

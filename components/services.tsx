@@ -9,44 +9,45 @@ interface ServicesProps {
   images: string;
 }
 
-const Services: React.FC<ServicesProps> = ({ title, description, images }) => {
+const Services = ({ title, description, images }: ServicesProps) => {
   return (
-    <CardContainer className="inter-var">
+    <CardContainer className="flex-wrap">
       <CardBody
-        className="relative group/card 
-  bg-[#919375]/40
-  text-white text-center 
-  border border-black/[0.1] dark:border-white/[0.2] 
-  w-auto sm:w-[30rem] h-auto 
-  rounded-xl p-6 
-  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
+        className="
+          relative group/card
+          bg-[#919375]/40 text-white text-center
+          w-auto sm:w-[30rem] h-auto
+          rounded-xl p-6
+        "
       >
-        <CardItem
-          translateZ="50"
-          className="text-xl font-bold text-white-600 dark:text-white"
-        >
+        {/* Title */}
+        <CardItem translateZ="50" className="text-xl aboreto text-white">
           {title}
         </CardItem>
 
+        {/* Image and Description */}
         <CardItem translateZ="100" className="w-full mt-4">
           <img
             src={images}
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
+            height={205}
+            width={411}
+            className="
+              h-60 w-full object-cover rounded-xl
+              group-hover/card:shadow-xl
+            "
           />
           <CardItem
             as="p"
             translateZ="60"
-            className="text-white-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            className="text-white alegreya text-1xl max-w-sm mt-2"
           >
             {description}
           </CardItem>
         </CardItem>
-        <div className="flex justify-between items-center mt-5"></div>
       </CardBody>
     </CardContainer>
   );
 };
+
 export default Services;
