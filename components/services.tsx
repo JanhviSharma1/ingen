@@ -11,7 +11,7 @@ interface ServicesProps {
 
 const Services = ({ title, description, images }: ServicesProps) => {
   return (
-    <CardContainer className="p-2">
+    <CardContainer className="p-3 sm:p-1 md:p-2 lg:p-3 justify-center">
       <CardBody
         className="
           bg-[#919375]/40 text-white

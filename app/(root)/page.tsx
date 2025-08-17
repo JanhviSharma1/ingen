@@ -31,14 +31,14 @@ export default function Home() {
       </section>
       <br />
 
-      <section className="text-center py-10 px-100">
+      <section className="text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32">
         <About />
       </section>
 
       <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]">
         SERVICES
       </h1>
-      <section className="flex-wrap flex">
+      <section className="flex-wrap flex justify-center">
         <Services
           title="DNA RECOVERY UNIT"
           description="Extracts and preserves genetic material from prehistoric fossils using proprietary Gen-Lock cryogenic systems."
