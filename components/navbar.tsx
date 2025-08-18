@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 shadow-md backdrop-blur-md">
+        <div className="md:hidden bg-white/85 shadow-md backdrop-blur-md">
           <ul className="flex flex-col space-y-4 py-6 px-6 font-bold aboreto tracking-wide text-[#495226]">
             <li>
               <a href="#home" className="hover:text-[#F4E432] transition">

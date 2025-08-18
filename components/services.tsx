@@ -20,12 +20,10 @@ const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
           rounded-xl p-6
         "
       >
-        {/* Title */}
         <CardItem translateZ="50" className="text-xl aboreto text-white">
           {title}
         </CardItem>
 
-        {/* Image + Description */}
         <CardItem translateZ="100" className="w-full mt-4">
           <img
             src={images}
@@ -53,14 +51,12 @@ const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
 // Section Component
 const Services = () => {
   return (
-    <div className="py-10 px-6">
-      {/* Heading */}
-      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] mb-10">
+    <div className="py-2 px-4 sm:py-8 sm:px-8 md:py-10 md:px-16 lg:py-12 lg:px-20">
+      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
         SERVICES
       </h1>
 
-      {/* Cards */}
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center">
         <ServiceCard
           title="DNA RECOVERY UNIT"
           description="Extracts and preserves genetic material from prehistoric fossils using proprietary Gen-Lock cryogenic systems."
@@ -68,13 +64,19 @@ const Services = () => {
         />
 
         <ServiceCard
-          title="GENETIC ENGINEERING LAB"
-          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
-          images="genetic-engineering.jpg"
+          title="HYBRID GENOME INITIATIVE"
+          description="Secretive program developing genetically enhanced hybrid species for specialized use."
+          images="hybrid-genome.jpg"
         />
 
         <ServiceCard
           title="PALEO-CLONING DIVISION"
+          description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
+          images="paleo.png"
+        />
+
+        <ServiceCard
+          title="GENETIC ENGINEERING LAB"
           description="Designs and modifies genetic sequences for enhanced traits and controlled breeding."
           images="genetic-engineering.jpg"
         />

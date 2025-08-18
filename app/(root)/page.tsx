@@ -38,7 +38,7 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="services" className="flex flex-col items-center py-10">
+      <section id="services" className="flex flex-col items-center py-2">
         <Services />
       </section>
 
