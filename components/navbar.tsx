@@ -32,7 +32,7 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#research" className="hover:text-[#F4E432] transition">
+            <a href="#team" className="hover:text-[#F4E432] transition">
               TEAM
             </a>
           </li>
