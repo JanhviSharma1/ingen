@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![InGen](./public/ingen-banner.png)
 
-## Getting Started
+# InGen — Jurassic World Inspired Website
 
-First, run the development server:
+This project is inspired by the fictional company **InGen** (shown in the _Jurassic World_ series).  
+The website is designed as if InGen had a modern-day online presence, serving as a **practice project** to strengthen skills in **UI/UX design, responsiveness, and animations**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎯 Project Goals
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Practice building **modern UI/UX layouts**
+- Explore **GSAP animations** and motion design
+- Create a **fully responsive** website across devices
+- Work with a **TypeScript + Next.js + TailwindCSS** stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🏗️ Website Sections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Hero Section** – Bold cinematic entry
+- **About** – Fictional company introduction
+- **Services** – What InGen offers in this imagined version
+- **Discover Dinosaurs** – Exploration section for different species
+- **Recent Stats** – Fictional data visualization
+- **Team** – Meet the creators behind InGen
 
-## Learn More
+## 🚀 Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js** – Framework for optimized React development
+- **TypeScript** – Strongly typed JavaScript
+- **TailwindCSS** – Utility-first CSS framework
+- **GSAP** – Smooth animations and transitions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Skills Explored
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- 🎨 UI/UX design principles
+- 📱 Responsive web design
+- 🎥 Animation workflows with GSAP
+- ⚡ Performance optimization with Next.js
