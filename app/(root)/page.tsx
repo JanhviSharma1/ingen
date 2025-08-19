@@ -3,11 +3,15 @@ import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Stats from "@/components/stats";
 import { CardsCarousel } from "@/components/discover";
+import Team from "@/components/team";
 
 export default function Home() {
   return (
     <div>
-      <section id="home" className="section hero">
+      <section
+        id="home"
+        className="section hero flex flex-col justify-center items-center text-center min-h-screen px-6 pt-20"
+      >
         <Navbar />
         <h1 className="text-6xl aboreto">
           <span className="alegreya text-[#F4E432]">
@@ -33,21 +37,24 @@ export default function Home() {
 
       <section
         id="about"
-        className="flex justify-center items-center text-center py-10 px-6 md:py-16 md:px-20 lg:py-20 lg:px-32"
+        className="flex justify-center items-center text-center py-2 px-0 md:py-16 md:px-20 lg:py-20 lg:px-32"
       >
         <About />
       </section>
 
-      <section id="services" className="flex flex-col items-center py-2">
+      <section id="services" className="flex flex-col items-center py-2 pt-7">
         <Services />
       </section>
 
       <section className="relative pl-[30px] py-10 bg-[url('/stats-bg.png')] bg-cover bg-center bg-no-repeat">
         <Stats />
       </section>
-      <br />
 
-      <section id="discover">
+      <section id="team" className="flex flex-col items-center py-2 pt-7">
+        <Team />
+      </section>
+
+      <section id="discover" className="pt-2">
         <CardsCarousel />
       </section>
     </div>

@@ -11,7 +11,7 @@ export function CardsCarousel() {
 
   return (
     <div className="w-full h-full py-20">
-      <h2 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center mb-10 text-[#919375]">
+      <h2 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center  text-[#919375]">
         DISCOVER
       </h2>
       <Carousel items={cards} />
@@ -25,7 +25,7 @@ const DummyContent = () => {
       {[...new Array(1)].map((_, index) => (
         <div
           key={"dummy-content" + index}
-          className="bg-[#F5F5F7] p-8 md:p-14 rounded-3xl mb-4"
+          className="bg-[#F5F5F7] p-8 md:p-2 rounded-3xl mb-4"
         >
           <p className="text-neutral-600 text-base md:text-2xl font-sans max-w-3xl mx-auto">
             <span className="font-bold text-neutral-700">Scientific Name:</span>{" "}

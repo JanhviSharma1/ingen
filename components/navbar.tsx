@@ -32,13 +32,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="#discover" className="hover:text-[#F4E432] transition">
-              DISCOVER
+            <a href="#research" className="hover:text-[#F4E432] transition">
+              TEAM
             </a>
           </li>
           <li>
-            <a href="#research" className="hover:text-[#F4E432] transition">
-              RESEARCH
+            <a href="#discover" className="hover:text-[#F4E432] transition">
+              DISCOVER
             </a>
           </li>
         </ul>

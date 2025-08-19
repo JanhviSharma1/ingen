@@ -52,7 +52,7 @@ const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
 const Services = () => {
   return (
     <div className="py-2 px-4 sm:py-8 sm:px-8 md:py-10 md:px-16 lg:py-12 lg:px-20">
-      <h1 className="aboreto text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
+      <h1 className="aboreto pt-2 text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
         SERVICES
       </h1>
 
