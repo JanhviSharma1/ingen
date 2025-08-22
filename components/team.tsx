@@ -93,7 +93,7 @@ export const AnimatedTeam = ({ autoplay = false }: { autoplay?: boolean }) => {
   const randomRotateY = () => Math.floor(Math.random() * 21) - 10;
 
   return (
-    <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
+    <div className="mx-auto max-w-sm px-4 py-20  pb-10 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
       <motion.h1
         className="aboreto text-2xl pt-1 p-11 sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]"
         initial={{ opacity: 0, y: 50 }}
@@ -182,7 +182,7 @@ export const AnimatedTeam = ({ autoplay = false }: { autoplay?: boolean }) => {
           </motion.div>
 
           {/* Controls */}
-          <div className="flex gap-4 pt-12 md:pt-0">
+          <div className="flex gap-4 pt-12">
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-[#9b9898]"

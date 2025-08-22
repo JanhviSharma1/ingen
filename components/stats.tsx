@@ -23,7 +23,7 @@ const Statstemp = ({ title, stat }: StatsProps) => {
   return (
     <div className="text-left p-13 sm:p-4 md:p-6">
       <motion.h1
-        className="aboreto text-4xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl text-[#96AB2F] font-bold"
+        className="aboreto text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#96AB2F]"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -32,7 +32,7 @@ const Statstemp = ({ title, stat }: StatsProps) => {
         {rounded}
       </motion.h1>
 
-      <h2 className="aboreto text-lg xs:text-lg sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl text-white mt-2 md:mt-3 font-semibold">
+      <h2 className="aboreto text-base xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-white mt-1 md:mt-2">
         {title}
       </h2>
     </div>
