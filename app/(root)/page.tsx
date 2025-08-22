@@ -4,6 +4,7 @@ import Services from "@/components/services";
 import Stats from "@/components/stats";
 import { CardsCarousel } from "@/components/discover";
 import Team from "@/components/team";
+import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 
 export default function Home() {
   return (
@@ -56,6 +57,10 @@ export default function Home() {
 
       <section id="discover" className="pt-2">
         <CardsCarousel />
+      </section>
+
+      <section>
+        <InfiniteMovingCardsDemo />
       </section>
     </div>
   );

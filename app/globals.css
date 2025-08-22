@@ -7,6 +7,17 @@
   --font-sans: var(--font-alegreya);
 }
 
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll var(--animation-duration, 80s) linear infinite;
+  animation-direction: var(--animation-direction, forwards);
+}
+
 body {
   background-color: #000;
   color: white;
