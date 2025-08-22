@@ -4,7 +4,6 @@ import About from "@/components/about";
 import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Stats from "@/components/stats";
-import { CardsCarousel } from "@/components/discover";
 import { AnimatedTeam } from "@/components/team";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 
