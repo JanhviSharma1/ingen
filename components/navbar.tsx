@@ -82,7 +82,7 @@ const Navbar = () => {
             </li>
             <li>
               <a href="#research" className="hover:text-[#F4E432] transition">
-                RESEARCH
+                TEAM
               </a>
             </li>
           </ul>
