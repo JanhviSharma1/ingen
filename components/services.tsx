@@ -12,7 +12,7 @@ interface ServiceCardProps {
 // Single Card Component
 const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
   return (
-    <CardContainer className="p-3 sm:p-1 md:p-2 lg:p-3 justify-center">
+    <CardContainer className="p-3 sm:p-1 justify-center">
       <CardBody
         className="
           bg-[#919375]/40 text-white
@@ -51,7 +51,7 @@ const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
 // Section Component
 const Services = () => {
   return (
-    <div className="py-2 px-4 sm:py-8 sm:px-8 md:py-10 md:px-16 lg:py-12 lg:px-20">
+    <div className="py-2 px-4 sm:py-8 sm:px-8">
       <h1 className="aboreto pt-2 text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
         SERVICES
       </h1>

@@ -7,7 +7,7 @@ type StatsProps = {
 
 const Statstemp = ({ title, stat }: StatsProps) => {
   return (
-    <div className="text-left p-3 sm:p-4 md:p-6">
+    <div className="text-left p-13 sm:p-4 md:p-6">
       <h1 className="aboreto text-3xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#96AB2F]">
         {stat}
       </h1>

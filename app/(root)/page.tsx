@@ -3,7 +3,7 @@ import Navbar from "@/components/navbar";
 import Services from "@/components/services";
 import Stats from "@/components/stats";
 import { CardsCarousel } from "@/components/discover";
-import Team from "@/components/team";
+import { AnimatedTestimonials } from "@/components/team";
 import { InfiniteMovingCardsDemo } from "@/components/testimonials";
 
 export default function Home() {
@@ -51,12 +51,12 @@ export default function Home() {
         <Stats />
       </section>
 
-      <section id="team" className="flex flex-col items-center py-2 pt-7">
-        <Team />
-      </section>
-
       <section id="discover" className="pt-2">
         <CardsCarousel />
+      </section>
+
+      <section id="team" className="flex flex-col items-center py-2 pt-7">
+        <AnimatedTestimonials autoplay />
       </section>
 
       <section>
