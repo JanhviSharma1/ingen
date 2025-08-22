@@ -3,6 +3,8 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 
+import { motion } from "framer-motion";
+
 interface ServiceCardProps {
   title: string;
   description: string;
@@ -12,39 +14,45 @@ interface ServiceCardProps {
 // Single Card Component
 const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
   return (
-    <CardContainer className="p-3 sm:p-1 justify-center">
-      <CardBody
-        className="
-          bg-[#919375]/40 text-white
-          w-auto sm:w-[30rem] h-auto
-          rounded-xl p-6
-        "
-      >
-        <CardItem translateZ="50" className="text-xl aboreto text-white">
-          {title}
-        </CardItem>
-
-        <CardItem translateZ="100" className="w-full mt-4">
-          <img
-            src={images}
-            alt={title}
-            height={205}
-            width={411}
-            className="
-              h-60 w-full object-cover rounded-xl
-              group-hover/card:shadow-xl
-            "
-          />
-          <CardItem
-            as="p"
-            translateZ="60"
-            className="text-white alegreya text-1xl max-w-sm mt-2"
-          >
-            {description}
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
+      <CardContainer className="p-3 sm:p-1 justify-center">
+        <CardBody
+          className="
+        bg-[#919375]/40 text-white
+        w-auto sm:w-[30rem] h-auto
+        rounded-xl p-6
+      "
+        >
+          <CardItem translateZ="50" className="text-xl aboreto text-white">
+            {title}
           </CardItem>
-        </CardItem>
-      </CardBody>
-    </CardContainer>
+
+          <CardItem translateZ="100" className="w-full mt-4">
+            <img
+              src={images}
+              alt={title}
+              height={205}
+              width={411}
+              className="
+            h-60 w-full object-cover rounded-xl
+            group-hover/card:shadow-xl
+          "
+            />
+            <CardItem
+              as="p"
+              translateZ="60"
+              className="text-white alegreya text-1xl max-w-sm mt-2"
+            >
+              {description}
+            </CardItem>
+          </CardItem>
+        </CardBody>
+      </CardContainer>
+    </motion.div>
   );
 };
 
@@ -52,9 +60,15 @@ const ServiceCard = ({ title, description, images }: ServiceCardProps) => {
 const Services = () => {
   return (
     <div className="py-2 px-4 sm:py-8 sm:px-8">
-      <h1 className="aboreto pt-2 text-2xl sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
+      <motion.h1
+        className="aboreto text-2xl pt-6 sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ amount: 0.5 }}
+      >
         SERVICES
-      </h1>
+      </motion.h1>
 
       <div className="flex flex-wrap justify-center">
         <ServiceCard

@@ -4,7 +4,7 @@ import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState } from "react";
 
-const testimonials = [
+const team = [
   {
     name: "John Hammond",
     designation: "Founder & Visionary",
@@ -63,26 +63,22 @@ const testimonials = [
   },
 ];
 
-type Testimonial = {
+type TeamMember = {
   about: string;
   name: string;
   designation: string;
   src: string;
 };
 
-export const AnimatedTestimonials = ({
-  autoplay = false,
-}: {
-  autoplay?: boolean;
-}) => {
+export const AnimatedTeam = ({ autoplay = false }: { autoplay?: boolean }) => {
   const [active, setActive] = useState(0);
 
   const handleNext = () => {
-    setActive((prev) => (prev + 1) % testimonials.length);
+    setActive((prev) => (prev + 1) % team.length);
   };
 
   const handlePrev = () => {
-    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    setActive((prev) => (prev - 1 + team.length) % team.length);
   };
 
   const isActive = (index: number) => index === active;
@@ -98,17 +94,24 @@ export const AnimatedTestimonials = ({
 
   return (
     <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
-      <h1 className="aboreto text-2xl pt-1 p-11 sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375] ">
+      <motion.h1
+        className="aboreto text-2xl pt-1 p-11 sm:text-4xl md:text-5xl lg:text-7xl text-center text-[#919375]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ amount: 0.5 }}
+      >
         MEET THE TEAM
-      </h1>
+      </motion.h1>
+
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         {/* Image */}
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
-              {testimonials.map((testimonial, index) => (
+              {team.map((member, index) => (
                 <motion.div
-                  key={testimonial.src}
+                  key={member.src}
                   initial={{
                     opacity: 0,
                     scale: 0.9,
@@ -120,9 +123,7 @@ export const AnimatedTestimonials = ({
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
                     rotate: isActive(index) ? 0 : randomRotateY(),
-                    zIndex: isActive(index)
-                      ? 40
-                      : testimonials.length + 2 - index,
+                    zIndex: isActive(index) ? 40 : team.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
@@ -135,8 +136,8 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   <img
-                    src={testimonial.src}
-                    alt={testimonial.name}
+                    src={member.src}
+                    alt={member.name}
                     width={500}
                     height={500}
                     draggable={false}
@@ -158,13 +159,11 @@ export const AnimatedTestimonials = ({
             transition={{ duration: 0.2, ease: "easeInOut" }}
           >
             <h3 className="text-2xl font-bold text-[#96AB2F] aboreto">
-              {testimonials[active].name}
+              {team[active].name}
             </h3>
-            <p className="text-sm text-gray-500">
-              {testimonials[active].designation}
-            </p>
+            <p className="text-sm text-gray-500">{team[active].designation}</p>
             <motion.p className="mt-8 text-lg text-white">
-              {testimonials[active].about.split(" ").map((word, index) => (
+              {team[active].about.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
