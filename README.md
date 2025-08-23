@@ -42,8 +42,8 @@ Follow these steps to run the project locally:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/your-username/ingen-website.git
-cd ingen-website
+git clone https://github.com/JanhviSharma1/ingen.git
+cd ingen
 ```
 
 2. **Install dependencies**
